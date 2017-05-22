@@ -267,6 +267,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 28S87GSRGJ;
 				INFOPLIST_FILE = waveAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tao.waveAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -280,6 +281,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 28S87GSRGJ;
 				INFOPLIST_FILE = waveAnimationDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tao.waveAnimationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +308,7 @@
 				1880E3261EC9543300FCA671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
