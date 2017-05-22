@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //颜色
-        waveView.waveColor = UIColor.blue
+//        waveView.waveColor = UIColor.blue
         //动画时间2s
         waveView.speed = 2
         //浪高
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         //波长
         waveView.wavelength = 320
         //持续动画
-//      waveView.alwaysAnimation = true
+    // waveView.alwaysAnimation = true
         
     }
 
