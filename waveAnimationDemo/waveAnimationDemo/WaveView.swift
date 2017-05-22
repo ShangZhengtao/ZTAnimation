@@ -7,17 +7,20 @@
 //  y=Asin（ωx+φ）+h
 
 import UIKit
-
 public class WaveView: UIView {
     
     
     //MARK: Public
     
     /// 振幅 波浪高度默认 8
-    public var amplitude: CGFloat = 8
-    /// 波长 默认 350
-    public var wavelength: CGFloat = 350
-    ///速度单位秒 默认2s
+    public var amplitude: CGFloat = 8 {
+        didSet {
+            A = amplitude
+        }
+    }
+    /// 波长 默认 320
+    public var wavelength: CGFloat = 320
+    /// 速度单位秒 默认2s
     public var speed: TimeInterval = 2
     /// 波浪颜色 默认白色
     public var waveColor = UIColor.white {
@@ -26,6 +29,12 @@ public class WaveView: UIView {
             otherWaveShape.fillColor = waveColor.withAlphaComponent(0.5).cgColor
         }
         
+    }
+    /// 一直执行动画
+    public var alwaysAnimation = false {
+        didSet {
+            if alwaysAnimation {startWave()}
+        }
     }
     
     /// 开始
@@ -49,6 +58,14 @@ public class WaveView: UIView {
     private var offsetY:CGFloat {return bounds.height - CGFloat(A)}
     private var A:CGFloat = 5;
     
+    private var gradientLayer: CAGradientLayer = {
+        let layer = CAGradientLayer()
+        layer.colors = [UIColor.white.cgColor, UIColor.clear.cgColor];
+        layer.startPoint = CGPoint.init(x: 0.5, y: 0.8)
+        layer.endPoint = CGPoint.init(x: 0.5, y: 0)
+        return layer
+    }()
+    
     private var waveShape: CAShapeLayer  = {
         let shape = CAShapeLayer()
         shape.fillColor = UIColor.white.cgColor;
@@ -64,14 +81,24 @@ public class WaveView: UIView {
     }()
     
     private var displayLink = CADisplayLink()
+    private var x:CGFloat = 0;
     @objc private func drawWave() {
-        let w = CGFloat((Double.pi) / Double(wavelength))
-        if A<=0 {
+        
+        let MaxX = 2.0 * sqrt(amplitude)
+        if x > MaxX && !alwaysAnimation { // 振幅进入下个周期
             displayLink.isPaused = true
             A = amplitude
-            offsetX = 0
+            offsetX = 0.0
+            x = 0.0
             return
         }
+        // y = 10 - (x - 3)^2 //振幅 A 周期公式
+        let temp = x - sqrt(amplitude)
+        A = amplitude - pow(temp, 2)
+        
+        self.gradientLayer.frame = CGRect.init(x: 0, y:bounds.size.height - A*2, width: bounds.size.width, height: A * 2)
+        //计算波长
+        let w = CGFloat((Double.pi) / Double(wavelength))
         let path = UIBezierPath()
         let otherPath = UIBezierPath()
         otherPath.move(to: CGPoint.init(x: 0, y:bounds.height))
@@ -89,10 +116,16 @@ public class WaveView: UIView {
         otherPath.close()
         waveShape.path = path.cgPath
         otherWaveShape.path = otherPath.cgPath
-        A = A -  amplitude / (60 * CGFloat(speed))
+        
         offsetX = offsetX + 0.1
+        if x >= MaxX / 2 && alwaysAnimation { //持续动画时 半个振幅周期
+            x = MaxX / 2
+            return;
+        }
+        x = x + MaxX/(60 * CGFloat(speed)) //计算动画时间 一个周期时间按秒
         
     }
+    
     
     //MARK: Init
     override init(frame: CGRect) {
@@ -106,13 +139,17 @@ public class WaveView: UIView {
     }
     
     private func commonInit() {
+        self.waveShape.mask = self.gradientLayer;
         self.layer.addSublayer(self.waveShape)
         self.layer.addSublayer(self.otherWaveShape)
         self.displayLink = CADisplayLink.init(target: self, selector: #selector(drawWave))
-        displayLink.isPaused = true
+        displayLink.isPaused = !alwaysAnimation;
         A = amplitude
         self.displayLink.add(to: RunLoop.current, forMode: .commonModes)
-        
+    }
+    public override func layoutSublayers(of layer: CALayer) {
+        super.layoutSublayers(of: layer)
+        self.gradientLayer.frame = CGRect.init(x: 0, y:bounds.size.height - A*2, width: bounds.size.width, height: A * 2)
     }
     
     
