@@ -1,4 +1,5 @@
 # ZTAnimation
 
-<img src="/img/wave.gif" width="750" height="1334">
+
+<img src="/img/wave.gif" width="350" height="667">
 
