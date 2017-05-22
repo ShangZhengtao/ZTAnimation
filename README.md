@@ -5,7 +5,7 @@
 
 ### 初始化
 ##### 支持Storyboard和代码创建
-```
+```Swift
 
 // @IBOutlet weak var waveView: WaveView!
  
@@ -22,7 +22,7 @@
 ```    
 
 ##### 调用
-```
+```Swift
 waveView.startWave()
 
 ```
