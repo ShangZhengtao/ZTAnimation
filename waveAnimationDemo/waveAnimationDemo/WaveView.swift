@@ -55,8 +55,8 @@ public class WaveView: UIView {
     
     //MARK: Private
     private var offsetX:CGFloat = 0;
-    private var offsetY:CGFloat {return bounds.height - CGFloat(A)}
-    private var A:CGFloat = 5;
+    private var offsetY:CGFloat {return bounds.height - A}
+    private var A:CGFloat = 8;
     
     private var gradientLayer: CAGradientLayer = {
         let layer = CAGradientLayer()
@@ -81,20 +81,19 @@ public class WaveView: UIView {
     }()
     
     private var displayLink = CADisplayLink()
-    private var x:CGFloat = 0;
+    private var x:CGFloat = 0; //振幅变化变量  x∈(0,2 * √amplitude）
     @objc private func drawWave() {
         
-        let MaxX = 2.0 * sqrt(amplitude)
-        if x > MaxX && !alwaysAnimation { // 振幅进入下个周期
+        let maxX = 2.0 * sqrt(amplitude)
+        if x > maxX && !alwaysAnimation { //完成一个周期停止动画
             displayLink.isPaused = true
             A = amplitude
             offsetX = 0.0
             x = 0.0
             return
         }
-        // y = 10 - (x - 3)^2 //振幅 A 周期公式
-        let temp = x - sqrt(amplitude)
-        A = amplitude - pow(temp, 2)
+        // y = 10 - (x - √10)^2 //振幅 A 周期公式 x∈(0,2*√10）；
+        A = amplitude - pow((x - sqrt(amplitude)), 2)
         
         self.gradientLayer.frame = CGRect.init(x: 0, y:bounds.size.height - A*2, width: bounds.size.width, height: A * 2)
         //计算波长
@@ -118,11 +117,11 @@ public class WaveView: UIView {
         otherWaveShape.path = otherPath.cgPath
         
         offsetX = offsetX + 0.1
-        if x >= MaxX / 2 && alwaysAnimation { //持续动画时 半个振幅周期
-            x = MaxX / 2
+        if x >= maxX / 2 && alwaysAnimation { //持续动画时
+            x = maxX / 2
             return;
         }
-        x = x + MaxX/(60 * CGFloat(speed)) //计算动画时间 一个周期时间按秒
+        x = x + maxX/(60 * CGFloat(speed)) //按秒计算一个周期时间
         
     }
     
