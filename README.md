@@ -1,14 +1,12 @@
 # ZTAnimation
 
-
+### 波浪动画
 <img src="/img/wave.gif" width="350" height="667">
 
-### 初始化
 ##### 支持Storyboard和代码创建
 ```Swift
 
 // @IBOutlet weak var waveView: WaveView!
- 
         //颜色
 //        waveView.waveColor = UIColor.blue
         //动画时间2s
@@ -24,5 +22,8 @@
 ##### 调用
 ```Swift
 waveView.startWave()
-
 ```
+### 下拉刷新七彩泡泡动画
+<img src="/img/refresh.gif" width="350" height="667"><br>
+
+[详情参考简书](http://www.jianshu.com/p/871c569f779d)
