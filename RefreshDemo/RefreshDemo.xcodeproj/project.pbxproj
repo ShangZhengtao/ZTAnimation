@@ -526,6 +526,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 28S87GSRGJ;
 				INFOPLIST_FILE = RefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tao.RefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +542,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 28S87GSRGJ;
 				INFOPLIST_FILE = RefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tao.RefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
