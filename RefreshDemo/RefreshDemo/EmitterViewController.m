@@ -66,15 +66,15 @@
 }
 
 
-//- (UIImage *)imageWithsize:(CGSize)size {
-//    if ( size.width <= 0 || size.height <= 0) return nil;
-//    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
-//    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    CGContextDrawImage(context, rect, [UIImage imageNamed:@"bubble"].CGImage);
-//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    return image;
-//}
+- (UIImage *)imageWithsize:(CGSize)size {
+    if ( size.width <= 0 || size.height <= 0) return nil;
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+    UIGraphicsBeginImageContextWithOptions(rect.size, NO, 0);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, rect, [UIImage imageNamed:@"bubble"].CGImage);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
 
 @end
