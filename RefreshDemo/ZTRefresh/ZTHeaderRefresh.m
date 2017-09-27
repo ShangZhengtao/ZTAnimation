@@ -79,6 +79,7 @@
 - (void)prepare
 {
     [super prepare];
+    self.clipsToBounds = YES;
     if (self.tintColor == nil) {
         self.tintColor = [UIColor orangeColor];
     }

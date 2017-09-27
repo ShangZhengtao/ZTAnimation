@@ -30,6 +30,7 @@
 - (void)prepare
 {
     [super prepare];
+    self.clipsToBounds = YES;
     if (self.lottieFilename.length == 0) {
         self.lottieFilename = @"loader_4";
     }

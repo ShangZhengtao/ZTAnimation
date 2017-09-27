@@ -45,6 +45,8 @@ static NSString *cellID = @"cellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
+    
+    kDisbaleAutoAdjustScrollViewInsets(self.tableView, self);
 }
 
 - (void)requsetData {

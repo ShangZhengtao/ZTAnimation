@@ -17,9 +17,9 @@
 @implementation ListViewController
 
 static NSString *cellID = @"cellID";
-
 - (void)setupTableView {
-    self.tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 64,screenSize.width , screenSize.height - 64) style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
@@ -42,11 +42,14 @@ static NSString *cellID = @"cellID";
         header.lottieFilename = @"material_wave_loading";
         self.tableView.mj_header = header;
     }
+   
+    
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.lottieFiles = @[@"cooking_app",@"loader1",
                          @"preloader",
                          @"refresh",@"pencil_write",
@@ -54,11 +57,12 @@ static NSString *cellID = @"cellID";
                          @"loading"];
     
     [self setupTableView];
+    kDisbaleAutoAdjustScrollViewInsets(self.tableView, self);
 }
 
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
-    self.tableView.frame = self.view.bounds;
+//    self.tableView.frame = self.view.bounds;
 }
 
 
