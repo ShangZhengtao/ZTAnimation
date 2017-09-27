@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "39D8AE7B3E7226B70631745EAC815EAE"
+               BlueprintIdentifier = "045E4EB72087391ABC2389A510EF7553"
                BuildableName = "Pods_RefreshDemo.framework"
                BlueprintName = "Pods-RefreshDemo"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -36,6 +37,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -45,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "39D8AE7B3E7226B70631745EAC815EAE"
+            BlueprintIdentifier = "045E4EB72087391ABC2389A510EF7553"
             BuildableName = "Pods_RefreshDemo.framework"
             BlueprintName = "Pods-RefreshDemo"
             ReferencedContainer = "container:Pods.xcodeproj">

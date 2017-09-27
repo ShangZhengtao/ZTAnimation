@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1871682A1F7A377B00B4F598 /* ZTLottieHeaderRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 187168291F7A377B00B4F598 /* ZTLottieHeaderRefresh.m */; };
+		1871682C1F7A398300B4F598 /* loader1.json in Resources */ = {isa = PBXBuildFile; fileRef = 1871682B1F7A397D00B4F598 /* loader1.json */; };
+		187168301F7A545D00B4F598 /* cooking_app.json in Resources */ = {isa = PBXBuildFile; fileRef = 1871682F1F7A545700B4F598 /* cooking_app.json */; };
+		187168321F7A585300B4F598 /* refresh.json in Resources */ = {isa = PBXBuildFile; fileRef = 187168311F7A585000B4F598 /* refresh.json */; };
+		187168341F7A593900B4F598 /* pencil_write.json in Resources */ = {isa = PBXBuildFile; fileRef = 187168331F7A593300B4F598 /* pencil_write.json */; };
+		187168361F7A59F100B4F598 /* material_wave_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 187168351F7A59EA00B4F598 /* material_wave_loading.json */; };
 		188AF05C1EE8EC040004B25D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AF05B1EE8EC040004B25D /* ViewController.m */; };
 		188AF05F1EE8ECB40004B25D /* EmitterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188AF05E1EE8ECB40004B25D /* EmitterViewController.m */; };
+		1894CBD91F7B4E5E002E1F3D /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894CBD81F7B4E5E002E1F3D /* ListViewController.m */; };
+		1894CBDB1F7B57F3002E1F3D /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1894CBDA1F7B57EF002E1F3D /* loading.json */; };
+		1894CBE11F7B58A5002E1F3D /* preloader.json in Resources */ = {isa = PBXBuildFile; fileRef = 1894CBE01F7B58A2002E1F3D /* preloader.json */; };
 		18BAAA381EE78A290035AC50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAAA371EE78A290035AC50 /* main.m */; };
 		18BAAA3B1EE78A290035AC50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BAAA3A1EE78A290035AC50 /* AppDelegate.m */; };
 		18BAAA411EE78A290035AC50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BAAA3F1EE78A290035AC50 /* Main.storyboard */; };
@@ -39,10 +48,21 @@
 
 /* Begin PBXFileReference section */
 		166AEE4EAFE9F3B91B264CC8 /* Pods-RefreshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefreshDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefreshDemo/Pods-RefreshDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		187168281F7A377B00B4F598 /* ZTLottieHeaderRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTLottieHeaderRefresh.h; sourceTree = "<group>"; };
+		187168291F7A377B00B4F598 /* ZTLottieHeaderRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTLottieHeaderRefresh.m; sourceTree = "<group>"; };
+		1871682B1F7A397D00B4F598 /* loader1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loader1.json; sourceTree = "<group>"; };
+		1871682F1F7A545700B4F598 /* cooking_app.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cooking_app.json; sourceTree = "<group>"; };
+		187168311F7A585000B4F598 /* refresh.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = refresh.json; sourceTree = "<group>"; };
+		187168331F7A593300B4F598 /* pencil_write.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pencil_write.json; sourceTree = "<group>"; };
+		187168351F7A59EA00B4F598 /* material_wave_loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = material_wave_loading.json; sourceTree = "<group>"; };
 		188AF05A1EE8EC040004B25D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		188AF05B1EE8EC040004B25D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		188AF05D1EE8ECB40004B25D /* EmitterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterViewController.h; sourceTree = "<group>"; };
 		188AF05E1EE8ECB40004B25D /* EmitterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmitterViewController.m; sourceTree = "<group>"; };
+		1894CBD71F7B4E5E002E1F3D /* ListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		1894CBD81F7B4E5E002E1F3D /* ListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		1894CBDA1F7B57EF002E1F3D /* loading.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		1894CBE01F7B58A2002E1F3D /* preloader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = preloader.json; sourceTree = "<group>"; };
 		18BAAA331EE78A290035AC50 /* RefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BAAA371EE78A290035AC50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18BAAA391EE78A290035AC50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,6 +109,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1894CBE21F7B58D1002E1F3D /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				187168351F7A59EA00B4F598 /* material_wave_loading.json */,
+				187168331F7A593300B4F598 /* pencil_write.json */,
+				187168311F7A585000B4F598 /* refresh.json */,
+				1871682B1F7A397D00B4F598 /* loader1.json */,
+				1871682F1F7A545700B4F598 /* cooking_app.json */,
+				1894CBDA1F7B57EF002E1F3D /* loading.json */,
+				1894CBE01F7B58A2002E1F3D /* preloader.json */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
 		18BAAA2A1EE78A290035AC50 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +153,8 @@
 				18BAAA3A1EE78A290035AC50 /* AppDelegate.m */,
 				188AF05A1EE8EC040004B25D /* ViewController.h */,
 				188AF05B1EE8EC040004B25D /* ViewController.m */,
+				1894CBD71F7B4E5E002E1F3D /* ListViewController.h */,
+				1894CBD81F7B4E5E002E1F3D /* ListViewController.m */,
 				18BAAA3F1EE78A290035AC50 /* Main.storyboard */,
 				188AF05D1EE8ECB40004B25D /* EmitterViewController.h */,
 				188AF05E1EE8ECB40004B25D /* EmitterViewController.m */,
@@ -161,6 +197,9 @@
 			children = (
 				18BAAA6A1EE78D620035AC50 /* ZTHeaderRefresh.h */,
 				18BAAA6B1EE78D620035AC50 /* ZTHeaderRefresh.m */,
+				187168281F7A377B00B4F598 /* ZTLottieHeaderRefresh.h */,
+				187168291F7A377B00B4F598 /* ZTLottieHeaderRefresh.m */,
+				1894CBE21F7B58D1002E1F3D /* LottieFiles */,
 			);
 			path = ZTRefresh;
 			sourceTree = "<group>";
@@ -294,9 +333,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187168361F7A59F100B4F598 /* material_wave_loading.json in Resources */,
 				18BAAA461EE78A290035AC50 /* LaunchScreen.storyboard in Resources */,
+				187168321F7A585300B4F598 /* refresh.json in Resources */,
 				18BAAA431EE78A290035AC50 /* Assets.xcassets in Resources */,
 				18BAAA411EE78A290035AC50 /* Main.storyboard in Resources */,
+				187168341F7A593900B4F598 /* pencil_write.json in Resources */,
+				1894CBE11F7B58A5002E1F3D /* preloader.json in Resources */,
+				187168301F7A545D00B4F598 /* cooking_app.json in Resources */,
+				1871682C1F7A398300B4F598 /* loader1.json in Resources */,
+				1894CBDB1F7B57F3002E1F3D /* loading.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,13 +384,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RefreshDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8A80D7328AA0BA41BFB2687 /* [CP] Embed Pods Frameworks */ = {
@@ -353,9 +402,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RefreshDemo/Pods-RefreshDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -370,9 +424,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				18BAAA3B1EE78A290035AC50 /* AppDelegate.m in Sources */,
+				1871682A1F7A377B00B4F598 /* ZTLottieHeaderRefresh.m in Sources */,
 				18BAAA6C1EE78D620035AC50 /* ZTHeaderRefresh.m in Sources */,
 				188AF05F1EE8ECB40004B25D /* EmitterViewController.m in Sources */,
 				188AF05C1EE8EC040004B25D /* ViewController.m in Sources */,
+				1894CBD91F7B4E5E002E1F3D /* ListViewController.m in Sources */,
 				18BAAA381EE78A290035AC50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
